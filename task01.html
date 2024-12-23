@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbolic Differentiation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        input, button, textarea {
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 16px;
+            width: 100%;
+        }
+        button {
+            cursor: pointer;
+        }
+        .result-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: blue;
+            font-size: 18px;
+            white-space: pre-wrap;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Symbolic Differentiation</h1>
+    <label for="expression">Expression:</label>
+    <input type="text" id="expression" placeholder="e.g., x^3 + 7*x - x^4">
+    <br>
+    <label for="variable">Differentiate with respect to:</label>
+    <input type="text" id="variable" placeholder="e.g., x">
+    <br>
+    <button onclick="computeDerivative()">Compute Derivative</button>
+    <h2>Result:</h2>
+    <div class="result-box" id="result"></div>
+    <script src="diff.js"></script>
+</body>
+</html>
